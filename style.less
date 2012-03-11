@@ -122,6 +122,25 @@ div.resume {
       margin-left: 200px;
       max-width: 600px;
 
+      .name {
+        font-weight: bold;
+
+        &:after {
+          content: ", ";
+        }
+      }
+
+      .where {
+        font-style: italic;
+        clear: both;
+      }
+
+      .desc {
+        font-weight: bold;
+        font-style: italic;
+        display: block;
+      }
+
       ul {
         padding-left: 16px;
         margin: 2px 0;

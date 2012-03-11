@@ -13,4 +13,7 @@ div.resume{width:960px;margin:auto;margin-top:20px;margin-bottom:30px;background
 div.resume div.section{margin-left:200px;font-size:22px;margin-top:16px;margin-bottom:13px;}
 div.resume div.entry{position:relative;margin-bottom:10px;}div.resume div.entry.hide{display:none;}
 div.resume div.entry div.margin{position:absolute;text-align:right;width:185px;}
-div.resume div.entry div.body{margin-left:200px;max-width:600px;}div.resume div.entry div.body ul{padding-left:16px;margin:2px 0;}
+div.resume div.entry div.body{margin-left:200px;max-width:600px;}div.resume div.entry div.body .name{font-weight:bold;}div.resume div.entry div.body .name:after{content:", ";}
+div.resume div.entry div.body .where{font-style:italic;clear:both;}
+div.resume div.entry div.body .desc{font-weight:bold;font-style:italic;display:block;}
+div.resume div.entry div.body ul{padding-left:16px;margin:2px 0;}
