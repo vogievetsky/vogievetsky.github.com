@@ -1,2 +1,2 @@
 #!/bin/bash
-sass compile style.scss
+sass --update style.scss

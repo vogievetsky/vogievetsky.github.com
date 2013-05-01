@@ -95,53 +95,63 @@ div.resume {
     font-size: 30px;
   }
 
-  div.section {
-    margin-left: 200px;
-    font-size: 22px;
-    margin-top: 16px;
-    margin-bottom: 13px;
-  }
-
-  div.entry {
-    position: relative;
-    margin-bottom: 10px;
-
-    &.hide {
-      display: none;
-    }
-
-    div.margin {
-      position: absolute;
-      text-align: right;
-      width: 185px;
-    }
-
-    div.body {
+  section {
+    h1 {
       margin-left: 200px;
-      max-width: 600px;
+      font-size: 22px;
+      margin-top: 16px;
+      margin-bottom: 13px;
+    }
 
-      .name {
-        font-weight: bold;
+    h2 {
+      margin-left: 200px;
+      font-size: 16px;
+      margin-top: 16px;
+      margin-bottom: 7px;
+      font-weight: bold;
+    }
 
-        &:after {
-          content: ", ";
+    div.entry {
+      position: relative;
+      margin-bottom: 10px;
+
+      &.hide {
+        display: none;
+      }
+
+      div.margin {
+        position: absolute;
+        text-align: right;
+        width: 185px;
+      }
+
+      div.body {
+        margin-left: 200px;
+        max-width: 600px;
+
+        .name {
+          font-weight: bold;
+
+          &:after {
+            content: ", ";
+          }
         }
-      }
 
-      .where {
-        font-style: italic;
-        clear: both;
-      }
+        .where {
+          font-style: italic;
+          clear: both;
+        }
 
-      .desc {
-        font-weight: bold;
-        font-style: italic;
-        display: block;
-      }
+        .desc {
+          font-weight: bold;
+          font-style: italic;
+          display: block;
+        }
 
-      ul {
-        padding-left: 16px;
-        margin: 2px 0;
+        ul {
+          padding-left: 16px;
+          margin: 2px 0;
+        }
       }
     }
   }
