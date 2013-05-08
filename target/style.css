@@ -155,6 +155,11 @@ div.main div.project .body h3 {
 }
 
 /* line 87, ../sass/style.scss */
+section#talks {
+  page-break-before: always;
+}
+
+/* line 91, ../sass/style.scss */
 div.resume {
   width: 960px;
   margin: auto;
@@ -164,19 +169,19 @@ div.resume {
   padding: 20px 10px 40px 10px;
   font-size: 13px;
 }
-/* line 96, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 div.resume div.name {
   margin-left: 200px;
   font-size: 30px;
 }
-/* line 102, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 div.resume section h1 {
   margin-left: 200px;
   font-size: 22px;
   margin-top: 16px;
   margin-bottom: 13px;
 }
-/* line 109, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 div.resume section h2 {
   margin-left: 200px;
   font-size: 16px;
@@ -184,47 +189,48 @@ div.resume section h2 {
   margin-bottom: 7px;
   font-weight: bold;
 }
-/* line 117, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 div.resume section div.entry {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 121, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 div.resume section div.entry.hide {
   display: none;
 }
-/* line 125, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 div.resume section div.entry div.margin {
   position: absolute;
   text-align: right;
   width: 185px;
 }
-/* line 131, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 div.resume section div.entry div.body {
   margin-left: 200px;
   max-width: 600px;
 }
-/* line 135, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 div.resume section div.entry div.body .name {
   font-weight: bold;
 }
-/* line 138, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 div.resume section div.entry div.body .name:after {
   content: ", ";
 }
-/* line 143, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 div.resume section div.entry div.body .where {
   font-style: italic;
   clear: both;
 }
-/* line 148, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 div.resume section div.entry div.body .desc {
   font-weight: bold;
   font-style: italic;
   display: block;
 }
-/* line 154, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 div.resume section div.entry div.body ul {
   padding-left: 16px;
   margin: 2px 0;
+  list-style-type: square;
 }
