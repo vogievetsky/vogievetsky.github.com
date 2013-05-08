@@ -84,8 +84,15 @@ div.main {
   }
 }
 
-section#talks {
-  page-break-before: always;
+@media print {
+  div.name {
+    padding-top: 70px;
+  }
+
+  section#talks {
+    page-break-before: always;
+    padding-top: 100px;
+  }
 }
 
 div.resume {
@@ -100,6 +107,26 @@ div.resume {
   div.name {
     margin-left: 200px;
     font-size: 30px;
+  }
+
+  div.contact {
+    margin-left: 200px;
+
+    a {
+      display: block;
+    }
+
+    .email {
+      &:before {
+        content: "Email: ";
+      }
+    }
+
+    .github {
+      &:before {
+        content: "GitHub: ";
+      }
+    }
   }
 
   section {
