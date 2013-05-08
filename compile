@@ -1,2 +1,2 @@
 #!/bin/bash
-sass --update style.scss
+compass compile --sass-dir sass/ --css-dir target/

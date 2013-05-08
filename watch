@@ -1,2 +1,2 @@
 #!/bin/bash
-sass --watch style.scss &
+compass watch --sass-dir sass/ --css-dir target/ &

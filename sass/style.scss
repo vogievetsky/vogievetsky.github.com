@@ -1,3 +1,5 @@
+@import "compass/reset";
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -89,6 +91,7 @@ div.resume {
   margin-bottom: 30px;
   background-color: white;
   padding: 20px 10px 40px 10px;
+  font-size: 13px;
 
   div.name {
     margin-left: 200px;
