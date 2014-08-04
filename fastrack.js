@@ -1,7 +1,11 @@
 var _fastrack_account = 'FT-1000002';
 
 (function(w,h) {
-  if (typeof _fastrack_account !== 'string') return;
+  if (typeof _fastrack_account !== 'string') {
+    console.log('no account :-(')
+    return;
+  }
+  var acc = _fastrack_account;
   try {
     var session = 'S' + Math.random().toFixed(8).substring(2);
     var num = 0;
@@ -12,7 +16,7 @@ var _fastrack_account = 'FT-1000002';
     var sy = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
     w.fastrack = function(opt) {
       var a = {
-        A: _fastrack_account,
+        A: acc,
         S: session,
         N: num++,
         P: document.location.href,
