@@ -1,10 +1,7 @@
 var _fastrack_account = 'FT-1000002';
 
 (function(w,h) {
-  if (typeof _fastrack_account !== 'string') {
-    console.log('no account :-(')
-    return;
-  }
+  if (typeof _fastrack_account !== 'string') return;
   var acc = _fastrack_account;
   try {
     var session = 'S' + Math.random().toFixed(8).substring(2);
@@ -32,9 +29,9 @@ var _fastrack_account = 'FT-1000002';
         var s;
         for (var j = 1; j <= 6; j++) {
           s = 'D0' + j;
-          if opt[s] { a['D0' + j] = opt['D0' + j]; }
+          if (opt[s]) { a['D0' + j] = opt['D0' + j]; }
           s = 'M0' + j;
-          if opt[s] { a['M0' + j] = opt['M0' + j]; }
+          if (opt[s]) { a['M0' + j] = opt['M0' + j]; }
         }
       }
 
