@@ -48,6 +48,6 @@ var _fastrack_account = 'FT-1000002';
       return true;
     };
   }catch(e){}
-})(window,"https://rt-test.mmx.io/i1/m.gif");
+})(window,"https://rt.metamarkets.com/i1/m.gif");
 
 fastrack();
