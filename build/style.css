@@ -90,121 +90,120 @@ body.resume {
   background-color: #929292;
 }
 
-/* line 27, ../sass/style.scss */
-a, a:visited {
+/* line 28, ../sass/style.scss */
+a,
+a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 a:hover {
   color: #f60;
   text-decoration: none;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .links a {
   text-decoration: underline;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 div.info {
   position: absolute;
   left: 10px;
   top: 4px;
   width: 240px;
 }
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 div.info .name {
   font-size: 22px;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 div.info .email {
-  margin: 3px 0px;
+  margin: 3px 0;
 }
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 div.info .bio {
-  margin: 3px 0px;
+  margin: 3px 0;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 div.main {
   position: absolute;
   left: 260px;
   top: 30px;
 }
-/* line 66, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 div.main div.project {
   position: relative;
   margin-bottom: 22px;
   font-size: 13px;
   min-height: 130px;
 }
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 div.main div.project .pic {
   position: absolute;
 }
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 div.main div.project .body {
   margin-left: 220px;
 }
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 div.main div.project .body h3 {
   font-size: 16px;
   margin: 0 0 9px 0;
 }
 
 @media print {
-  /* line 88, ../sass/style.scss */
+  /* line 89, ../sass/style.scss */
   div.name {
     padding-top: 70px;
   }
 
-  /* line 92, ../sass/style.scss */
-  section#talks {
+  /* line 93, ../sass/style.scss */
+  #talks {
     page-break-before: always;
     padding-top: 100px;
   }
 }
-/* line 98, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 div.resume {
   width: 960px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin: 20px auto 30px;
   background-color: white;
   padding: 20px 10px 40px 10px;
   font-size: 13px;
 }
-/* line 107, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 div.resume div.name {
   margin-left: 200px;
   font-size: 30px;
 }
-/* line 112, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 div.resume div.contact {
   margin-left: 200px;
 }
-/* line 115, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 div.resume div.contact a {
   display: block;
 }
-/* line 120, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 div.resume div.contact .email:before {
   content: "Email: ";
 }
-/* line 126, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 div.resume div.contact .github:before {
   content: "GitHub: ";
 }
-/* line 133, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 div.resume section h1 {
   margin-left: 200px;
   font-size: 22px;
   margin-top: 16px;
   margin-bottom: 13px;
 }
-/* line 140, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 div.resume section h2 {
   margin-left: 200px;
   font-size: 16px;
@@ -212,46 +211,46 @@ div.resume section h2 {
   margin-bottom: 7px;
   font-weight: bold;
 }
-/* line 148, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 div.resume section div.entry {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 152, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 div.resume section div.entry.hide {
   display: none;
 }
-/* line 156, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 div.resume section div.entry div.margin {
   position: absolute;
   text-align: right;
   width: 185px;
 }
-/* line 162, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 div.resume section div.entry div.body {
   margin-left: 200px;
   max-width: 600px;
 }
-/* line 166, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 div.resume section div.entry div.body .name {
   font-weight: bold;
 }
-/* line 169, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 div.resume section div.entry div.body .name:after {
   content: ", ";
 }
-/* line 174, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 div.resume section div.entry div.body .where {
   font-style: italic;
   clear: both;
 }
-/* line 179, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 div.resume section div.entry div.body .desc {
   font-weight: bold;
   font-style: italic;
   display: block;
 }
-/* line 185, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 div.resume section div.entry div.body ul {
   padding-left: 16px;
   margin: 2px 0;
