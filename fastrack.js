@@ -50,4 +50,5 @@ var _fastrack_account = 'FT-1000002';
   }catch(e){}
 })(window,"https://rt.metamarkets.com/i1/m.gif");
 
-fastrack();
+// Disable until we can get better FT
+//fastrack();
