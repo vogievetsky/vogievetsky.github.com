@@ -13,17 +13,28 @@
     <style type="text/css">
       body {
         background: #111;
+        margin: 0;
+      }
+
+      #msg {
+        color: white;
+        font-family: sans-serif;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
+    <div id="msg">-</div>
     <script>
       var INTERVAL = 3000;
       var body = document.getElementsByTagName('body')[0];
+      var msg = document.getElementById('msg');
 
       function blick() {
+        var now = new Date().valueOf();
         body.style.background = 'red';
-        document.title = '💥 ' + (new Date().valueOf() % INTERVAL) + 'ms';
+        msg.innerText = String(now);
+        document.title = '💥 ' + (now % INTERVAL) + 'ms';
 
         setTimeout(function() {
           body.style.background = null;
