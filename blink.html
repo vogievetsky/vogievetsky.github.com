@@ -30,8 +30,7 @@
       var body = document.getElementsByTagName('body')[0];
       var msg = document.getElementById('msg');
 
-      function blick() {
-        var now = new Date().valueOf();
+      function blick(now) {
         body.style.background = 'red';
         msg.innerText = String(now);
         document.title = '💥 ' + (now % INTERVAL) + 'ms';
@@ -42,17 +41,13 @@
         }, 400);
       }
 
-      function timeReading() {
-        return Math.floor(new Date().valueOf() / INTERVAL);
+      function next() {
+        var now = new Date().valueOf();
+        var offset = now % INTERVAL;
+        setTimeout(next, INTERVAL - offset);
+        if (offset < 25) blick(now);
       }
-
-      var lastReading = timeReading();
-      setInterval(function() {
-        var currentReading = timeReading();
-        if (lastReading === currentReading) return;
-        blick();
-        lastReading = currentReading;
-      }, 25);
+      next();
     </script>
   </body>
 </html>
