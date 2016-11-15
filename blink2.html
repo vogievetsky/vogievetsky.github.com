@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE8">
+    <meta name="description" content="Koalas to the Max, a site made with love by Vadim Ogievetsky for Annie Albagli">
+    <meta name="keywords" content="Clcoks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="google" content="notranslate">
+    <title>Blink</title>
+    <style type="text/css">
+      body {
+        background: #111;
+        margin: 0;
+      }
+
+      #msg {
+        color: white;
+        font-family: sans-serif;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="msg">-</div>
+    <script>
+      var preTime = new Date().valueOf();
+      var serverTime = null;
+      function st(v) {
+        serverTime = new Date(v.dateString).valueOf();
+      }
+    </script>
+    <script type="text/javascript" src="http://www.timeapi.org/utc/now.json?\FT\T.\L&callback=st"></script>
+    <script>
+      var postTime = new Date().valueOf();
+      var serverOffset = serverTime - Math.floor((postTime + preTime) / 2);
+
+      var INTERVAL = 3000;
+      var body = document.getElementsByTagName('body')[0];
+      var msg = document.getElementById('msg');
+
+      function blick(now) {
+        body.style.background = 'red';
+        msg.innerText = '' + now + ' (' + serverOffset + ')';
+        document.title = '💥 ' + (now % INTERVAL) + 'ms';
+
+        setTimeout(function() {
+          body.style.background = null;
+          document.title = 'Blink';
+        }, 400);
+      }
+
+      function next() {
+        var now = new Date().valueOf() - serverOffset;
+        var offset = now % INTERVAL;
+        setTimeout(next, INTERVAL - offset);
+        if (offset < 25) blick(now);
+      }
+      next();
+    </script>
+  </body>
+</html>
