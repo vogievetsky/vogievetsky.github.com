@@ -27,16 +27,17 @@
     <div id="msg">-</div>
     <script>
       var preTime = new Date().valueOf();
-      var serverTime = null;
+      var serverTime;
+      var postTime;
+      var serverOffset;
       function st(v) {
         serverTime = new Date(v.dateString).valueOf();
+        postTime = new Date().valueOf();
+        serverOffset = serverTime - Math.floor((postTime + preTime) / 2);
       }
     </script>
     <script type="text/javascript" src="http://www.timeapi.org/utc/now.json?\FT\T.\L&callback=st"></script>
     <script>
-      var postTime = new Date().valueOf();
-      var serverOffset = serverTime - Math.floor((postTime + preTime) / 2);
-
       var INTERVAL = 3000;
       var body = document.getElementsByTagName('body')[0];
       var msg = document.getElementById('msg');
