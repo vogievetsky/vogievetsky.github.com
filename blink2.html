@@ -53,7 +53,7 @@
       }
 
       function next() {
-        var now = new Date().valueOf() - serverOffset;
+        var now = new Date().valueOf() + serverOffset;
         var offset = now % INTERVAL;
         setTimeout(next, INTERVAL - offset);
         if (offset < 25) blick(now);
